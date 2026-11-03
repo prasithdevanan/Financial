@@ -1,6 +1,7 @@
 
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
+import { useState } from "react";
 import {
     Pressable,
     Text,
@@ -11,6 +12,7 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const SignInScreen = () => {
+    const [password, setPassword] = useState("");
     return (
         <SafeAreaView edges={["top", "bottom"]} className="flex-1 bg-white px-6">
 
@@ -31,6 +33,7 @@ const SignInScreen = () => {
                     <Text className="text-sm font-semibold text-gray-700 mb-2">
                         Email Address
                     </Text>
+
 
                     <TextInput
                         placeholder="Enter your email"
