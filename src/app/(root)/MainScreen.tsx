@@ -11,6 +11,9 @@ export default function MainScreen() {
         <Text className="text-gray-500 text-base mt-2">
           You have successfully signed in.
         </Text>
+        <Text>
+          This is the main content of the app. You can navigate to different sections from here.
+        </Text>
       </View>
     </SafeAreaView>
   )
